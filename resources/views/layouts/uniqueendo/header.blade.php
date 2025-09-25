@@ -50,7 +50,7 @@
                     </nav>
                     <div class="header__btn">
                         {{-- <a href="{{ route('uniqueendo.appointment') }}" class="primary-btn">Appointment</a> --}}
-                        <a href="{{route('uniqueendo.home')}}#consultation__form" class="primary-btn">Appointment</a>
+                        <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Appointment</a>
                     </div>
                 </div>
             </div>

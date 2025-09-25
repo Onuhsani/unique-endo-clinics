@@ -24,7 +24,7 @@ class AppointmentController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',
-            'appointment_date' => 'required',
+            'date' => 'required',
             'clinic' => 'required|string',
         ]);
 
@@ -34,9 +34,9 @@ class AppointmentController extends Controller
                 'clinic_id' => 1,
                 'name' => $request->name,
                 'email' => $request->email,
-                'appointment_date' => $request->appointment_date,
+                'appointment_date' => $request->date,
                 'status' => 'pending',
-                'notes' => 'For treatment'
+                // 'notes' => 'For treatment'
             ]);
 
             return redirect()->back()->with('success', 'Appointment scheduled successfully!');

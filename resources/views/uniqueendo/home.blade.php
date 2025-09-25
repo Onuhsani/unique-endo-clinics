@@ -6,14 +6,14 @@
 
 @section('contents')
     <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" data-setbg="img/hero-bg.jpg">
+    <section class="hero spad set-bg" style="background-color: rgba(255, 255, 255, 0.6); background-blend-mode: lighten;" data-setbg="img/hero-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="hero__text">
-                        <span>RESTORE YOUR COMFORT, REGAIN YOUR LIFE. </span>
-                        <h2>Take the best Endoscopy Treatment with us</h2>
-                        <a href="#" class="primary-btn normal-btn">Contact us</a>
+                        <span style="color: blue"><h3> YOUR COMFORT, REGAIN YOUR LIFE. </h3></span>
+                        <h2 style="color: red">Take the best Endoscopy Treatment with us</h2>
+                        <a href="{{ route('uniqueendo.contact') }}" class="primary-btn normal-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,27 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="consultation__video set-bg" data-setbg="img/consultation-video.jpeg">
-                                    <a href="https://www.youtube.com/watch?v=PXsuI67s2AA" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                                    {{-- <a href="https://www.youtube.com/watch?v=PXsuI67s2AA" class="play-btn video-popup"><i class="fa fa-play"></i></a> --}}
+
+                                                                <!-- Play Button -->
+                                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                        ▶ Play Video
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                                            <div class="modal-content bg-dark">
+                                                <div class="modal-body p-0">
+                                                    <video id="localVideo" class="w-100" controls>
+                                                        <source src="{{ asset('videos/endo.mp4') }}" type="video/mp4">
+                                                        Your browser does not support HTML5 video.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End of video --}}
                                 </div>
                             </div>
                         </div>
@@ -147,7 +167,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="services__btn">
-                        <a href="#" class="primary-btn">Contact us</a>
+                        <a href="{{ route('uniqueendo.contact') }}" class="primary-btn">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -178,6 +198,23 @@
                             </div>
                             <div class="services__item__text">
                                 <h5>Minimal access surgery</h5>
+                                <p>Innovative surgical techniques that reduce recovery time and minimize discomfort.
+                                </p><br />
+                                <h6 class="primary-btn">Click to view details >></h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <a href="#">
+                        <div class="services__item">
+                            <div class="services__item__icon">
+                                <img src="img/icons/en-5.png" widht="80px" height="80px" alt="image"/>
+                                {{-- <span class="flaticon-027-beauty"></span> --}}
+                            </div>
+                            <div class="services__item__text">
+                                <h5>Minimally Invasive Paediatric Surgery</h5>
                                 <p>Innovative surgical techniques that reduce recovery time and minimize discomfort.
                                 </p><br />
                                 <h6 class="primary-btn">Click to view details >></h6>
@@ -378,4 +415,85 @@
         </div>
     </section> --}}
     <!-- Latest News End -->
+
+    <!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form action="{{ route('appointments.add') }}" method="POST">
+                    @csrf
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+
+                    <!-- Appointment Date -->
+                    <div class="mb-3">
+                        <label for="appointment_date" class="form-label">Appointment Date</label>
+                        <input type="date" class="form-control" name="date" required>
+                    </div>
+
+                    <!-- Type of Service -->
+                    <div class="mb-3">
+                        <label for="service_type" class="form-label">Type of Service</label>
+                        <select class="form-select" name="clinic" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="checkup">Checkup</option>
+                            <option value="treatment">Treatment</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
+
+
+@push('scripts')
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var videoModal = document.getElementById('videoModal');
+    var video = document.getElementById('localVideo');
+
+    // Play when modal opens
+    videoModal.addEventListener('show.bs.modal', function () {
+        video.play().catch(error => {
+            console.log("Autoplay blocked:", error);
+        });
+    });
+
+    // Stop & reset when modal closes
+    videoModal.addEventListener('hidden.bs.modal', function () {
+        video.pause();
+        video.currentTime = 0;
+    });
+
+    // Pause video when modal closes
+    videoModal.addEventListener('hidden.bs.modal', function () {
+        video.pause();
+        video.currentTime = 0; // optional: restart from beginning
+    });
+});
+</script>
+@endpush

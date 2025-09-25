@@ -19,8 +19,14 @@
     <link rel="stylesheet" href={{ asset("css/owl.carousel.min.css") }} type="text/css">
     <link rel="stylesheet" href={{ asset("css/slicknav.min.css") }} type="text/css">
     <link rel="stylesheet" href={{ asset("css/style.css") }} type="text/css">
+     <link rel="stylesheet" href={{ asset("css/homepage.css") }} type="text/css">
     <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Toastr -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
