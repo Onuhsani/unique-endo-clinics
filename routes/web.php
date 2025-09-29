@@ -8,13 +8,14 @@ use App\Http\Controllers\uniqueendo\DashboardController;
 use App\Http\Controllers\uniqueendo\NewsletterController;
 use App\Http\Controllers\uniqueendo\ClinicController;
 use App\Http\Controllers\uniqueendo\MessageController;
+use App\Http\Controllers\uniqueendo\ServiceController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
 Route::get('/', function () {
-    return view('uniqueendo.home');
+    return view('uniqueendo.endoclinic');
 });
 
 Route::get('/home', [UniqueEndoController::class, 'home'])->name('uniqueendo.home');
@@ -22,6 +23,13 @@ Route::get('/about', [UniqueEndoController::class, 'about'])->name('uniqueendo.a
 Route::get('/contact', [UniqueEndoController::class, 'contact'])->name('uniqueendo.contact');
 Route::get('/gallery', [UniqueEndoController::class, 'gallery'])->name('uniqueendo.gallery');
 Route::get('/appointment', [UniqueEndoController::class, 'appointment'])->name('uniqueendo.appointment');
+
+Route::get('/endoscopy', [ServiceController::class, 'endoscopy'])->name('service.endoscopy');
+Route::get('/minimal-access-surgery', [ServiceController::class, 'mas'])->name('service.mas');
+Route::get('/minimally-invasive-paediatric-surgery', [ServiceController::class, 'mips'])->name('service.mips');
+Route::get('/endourology', [ServiceController::class, 'endourology'])->name('service.endourology');
+Route::get('/general-surgery', [ServiceController::class, 'gen_surgery'])->name('service.gsurgery');
+Route::get('/gynae-endoscopy', [ServiceController::class, 'gendoscopy'])->name('service.gendoscopy');
 
 
 Route::prefix('admin')->group(function(){

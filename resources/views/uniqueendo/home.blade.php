@@ -452,9 +452,12 @@
                         <label for="service_type" class="form-label">Type of Service</label>
                         <select class="form-select" name="clinic" required>
                             <option value="" disabled selected>Select a service</option>
-                            <option value="consultation">Consultation</option>
-                            <option value="checkup">Checkup</option>
-                            <option value="treatment">Treatment</option>
+                            <option value="consultation">Endoscopy and endotherapy</option>
+                            <option value="checkup">Minimal access surgery</option>
+                            <option value="treatment">Minimally invasive paediatric surgery</option>
+                            <option value="treatment">Endourology</option>
+                            <option value="treatment">Gynae Endoscopy</option>
+                            <option value="treatment">General Surgery</option>
                         </select>
                     </div>
 
@@ -497,3 +500,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 @endpush
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("openModal") === "appointment") {
+      const appointmentModal = new bootstrap.Modal(document.getElementById('appointmentModal'));
+      appointmentModal.show();
+
+      // optional: remove query from URL after opening
+      if (history.replaceState) {
+        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        history.replaceState({}, document.title, cleanUrl);
+      }
+    }
+  });
+</script>
