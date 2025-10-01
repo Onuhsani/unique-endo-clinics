@@ -1,7 +1,7 @@
 @extends('layouts.uniqueendo.app')
 
 @section('title')
-    UniqueEndo | MAS
+    UniqueEndo | General Surgery
 @endsection
 
 @section('contents')
@@ -13,8 +13,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                         <h1>Minimal Access Surgery</h1>
-                        <h5 class="text-danger">Advanced care with smaller cuts, faster recovery</h5>
+                         <h1>General Surgery</h1>
+                        <h5 class="text-danger">Comprehensive surgical care for a wide range of conditions</h5>
                         <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
@@ -24,8 +24,10 @@
 
     <!-- Introduction -->
     <section class="container py-5">
-    <h2>About Minimal Access Surgery</h2>
-    <p>Minimal Access Surgery, also known as laparoscopic or keyhole surgery, is a modern surgical approach that uses tiny incisions instead of large cuts. Through these small openings, surgeons insert a special camera (laparoscope) and fine surgical instruments to perform procedures with precision. This technique reduces trauma to the body, minimizes scarring, and speeds up recovery. It is commonly used for treating conditions such as gallbladder problems, hernias, appendicitis, and certain gynecological or urological issues. Unlike traditional open surgery, patients undergoing minimal access surgery often experience less pain, reduced risk of infection, and a quicker return to normal activities. <br /><br />At UniqueEndo, our specialists are trained in advanced techniques to ensure patient safety and successful outcomes. Whether for diagnostic or therapeutic purposes, minimal access surgery provides a safer, less invasive alternative to conventional surgery.</p>
+    {{-- <h2 class="mb-5" style="text-align: center">About Minimally Invasive Surgery</h2> --}}
+    <p>General Surgery involves the diagnosis and treatment of a variety of medical conditions through surgical procedures. It covers a broad spectrum of health issues affecting the abdomen, digestive system, soft tissues, and more.
+
+        <br />At UniqueEndo, we provide both traditional and minimally invasive surgical solutions tailored to each patient’s needs. Our highly skilled surgeons use modern techniques and advanced equipment to ensure safe, effective, and successful outcomes. Whether it’s an emergency or a planned procedure, our focus is always on patient safety, faster recovery, and compassionate care.</p>
     </section>
 
     <!-- Benefits -->
@@ -33,11 +35,11 @@
     <div class="container">
         <h2 class="mb-4" style="text-align: center">Key Benefits</h2>
         <ul class="list-unstyled">
-        <li><span class="benefit-icon">✅</span>Smaller incisions</li>
-        <li><span class="benefit-icon">✅</span>Less pain and bleeding</li>
-        <li><span class="benefit-icon">✅</span>Shorter hospital stay</li>
-        <li><span class="benefit-icon">✅</span>Faster recovery and return to daily life</li>
-        <li><span class="benefit-icon">✅</span>Minimal scarring</li>
+            <li><span class="benefit-icon">✅</span>Wide range of surgical expertise</li>
+            <li><span class="benefit-icon">✅</span>Safe and effective procedures</li>
+            <li><span class="benefit-icon">✅</span>Access to both open and minimally invasive options</li>
+            <li><span class="benefit-icon">✅</span>Shorter recovery times where possible</li>
+            <li><span class="benefit-icon">✅</span>Highly experienced surgical team</li>
         </ul>
     </div>
     </section>
@@ -46,11 +48,11 @@
     <section class="container py-5">
     <h2 class="mb-5" style="text-align: center">Conditions Treated</h2>
     <div class="row">
-        <div class="col-md-4">✅Gallstones and gallbladder disease</div>
-        <div class="col-md-4">✅Hernias</div>
         <div class="col-md-4">✅Appendicitis</div>
-        <div class="col-md-4">✅Ovarian cysts and gynecological conditions</div>
-        <div class="col-md-4">✅Certain urological disorders</div>
+        <div class="col-md-4">✅Hernias</div>
+        <div class="col-md-4">✅Gallbladder disease</div>
+        <div class="col-md-4">✅Tumors and abnormal growths</div>
+        <div class="col-md-4">✅Abdominal infections and injuries</div>
     </div>
     </section>
 
@@ -61,19 +63,20 @@
         <div class="row text-center">
         <div class="col-md-4">
             <h5>Before</h5>
-            <p>Pre-surgery consultation and medical tests</p>
-            <p>Fasting instructions and preparation</p>
+            <p>Pre-surgery consultation and diagnostic tests</p>
+            <p>Guidance on preparation and lifestyle adjustments</p>
         </div>
         <div class="col-md-4">
             <h5>During</h5>
-            <p>Small incisions made for camera and instruments</p>
-            <p>Procedure performed under anesthesia</p>
+            <p>Procedure carried out under anesthesia</p>
+            <p>Depending on condition: open or minimally invasive technique</p>
+            <p>Continuous monitoring for safety</p>
         </div>
         <div class="col-md-4">
             <h5>After</h5>
-            <p>Short hospital observation</p>
-            <p>Light discomfort that eases quickly</p>
-            <p>Return to daily activities in a few days</p>
+            <p>Recovery in a safe hospital environment</p>
+            <p>Pain management and wound care</p>
+            <p>Gradual return to normal activities with follow-up support</p>
         </div>
         </div>
     </div>
@@ -116,7 +119,7 @@
     <!-- Technology & Equipment with Tabs -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2 class="mb-5" style="text-align: center">MAS Image and video gallery</h2>
+        <h2 class="mb-5" style="text-align: center">General Surgery Image and video gallery</h2>
         <!-- Tabs -->
         <ul class="nav nav-tabs" id="mediaTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -163,26 +166,26 @@
         <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="q1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is it safe?</button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">What types of surgeries are done under General Surgery?</button>
             </h2>
             <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Yes, minimal access surgery is safe and widely used around the world with very high success rates.</div>
+            <div class="accordion-body">A wide variety, including appendectomy, hernia repair, gallbladder removal, and tumor excisions.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Will I have scars?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Is recovery time long?</button>
             </h2>
             <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Only tiny marks that usually fade over time.</div>
+            <div class="accordion-body">Recovery depends on the procedure, but with modern techniques, most patients heal faster than before.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">How soon can I resume normal activities?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">Are these surgeries safe?</button>
             </h2>
             <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Most patients return to work and light activities within a week.</div>
+            <div class="accordion-body">Yes. Our team follows strict safety protocols and advanced techniques to minimize risks.</div>
             </div>
         </div>
         </div>

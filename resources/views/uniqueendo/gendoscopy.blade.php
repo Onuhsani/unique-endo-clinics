@@ -1,7 +1,7 @@
 @extends('layouts.uniqueendo.app')
 
 @section('title')
-    UniqueEndo | MAS
+    UniqueEndo | Gynae Endoscopy
 @endsection
 
 @section('contents')
@@ -13,8 +13,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                         <h1>Minimal Access Surgery</h1>
-                        <h5 class="text-danger">Advanced care with smaller cuts, faster recovery</h5>
+                         <h1>Gynae Endoscopy</h1>
+                        <h5 class="text-danger">Gentle and precise care for women’s health</h5>
                         <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
@@ -24,8 +24,13 @@
 
     <!-- Introduction -->
     <section class="container py-5">
-    <h2>About Minimal Access Surgery</h2>
-    <p>Minimal Access Surgery, also known as laparoscopic or keyhole surgery, is a modern surgical approach that uses tiny incisions instead of large cuts. Through these small openings, surgeons insert a special camera (laparoscope) and fine surgical instruments to perform procedures with precision. This technique reduces trauma to the body, minimizes scarring, and speeds up recovery. It is commonly used for treating conditions such as gallbladder problems, hernias, appendicitis, and certain gynecological or urological issues. Unlike traditional open surgery, patients undergoing minimal access surgery often experience less pain, reduced risk of infection, and a quicker return to normal activities. <br /><br />At UniqueEndo, our specialists are trained in advanced techniques to ensure patient safety and successful outcomes. Whether for diagnostic or therapeutic purposes, minimal access surgery provides a safer, less invasive alternative to conventional surgery.</p>
+    {{-- <h2 class="mb-5" style="text-align: center">About Minimally Invasive Surgery</h2> --}}
+    <p>Gynae Endoscopy, also known as gynaecological endoscopy, is a modern procedure that helps doctors diagnose and treat conditions affecting the female reproductive system using minimally invasive techniques. With the aid of small cameras and specialized instruments, our specialists can examine and treat the uterus, fallopian tubes, and ovaries without the need for large surgical cuts.
+
+        <br /><br />Common procedures include hysteroscopy (looking inside the uterus) and laparoscopy (examining the abdomen and pelvis). These techniques are effective in diagnosing and managing issues such as fibroids, ovarian cysts, infertility, pelvic pain, and abnormal bleeding.
+
+        At UniqueEndo, we combine advanced technology with compassionate care, ensuring that every woman receives safe, comfortable, and effective treatment tailored to her needs.</p>
+
     </section>
 
     <!-- Benefits -->
@@ -33,10 +38,10 @@
     <div class="container">
         <h2 class="mb-4" style="text-align: center">Key Benefits</h2>
         <ul class="list-unstyled">
-        <li><span class="benefit-icon">✅</span>Smaller incisions</li>
+        <li><span class="benefit-icon">✅</span>Small incisions with quick healing</li>
         <li><span class="benefit-icon">✅</span>Less pain and bleeding</li>
-        <li><span class="benefit-icon">✅</span>Shorter hospital stay</li>
-        <li><span class="benefit-icon">✅</span>Faster recovery and return to daily life</li>
+        <li><span class="benefit-icon">✅</span>Shorter hospital stays</li>
+        <li><span class="benefit-icon">✅</span>High accuracy in diagnosis and treatment</li>
         <li><span class="benefit-icon">✅</span>Minimal scarring</li>
         </ul>
     </div>
@@ -46,11 +51,11 @@
     <section class="container py-5">
     <h2 class="mb-5" style="text-align: center">Conditions Treated</h2>
     <div class="row">
-        <div class="col-md-4">✅Gallstones and gallbladder disease</div>
-        <div class="col-md-4">✅Hernias</div>
-        <div class="col-md-4">✅Appendicitis</div>
-        <div class="col-md-4">✅Ovarian cysts and gynecological conditions</div>
-        <div class="col-md-4">✅Certain urological disorders</div>
+        <div class="col-md-4">✅Fibroids and ovarian cysts</div>
+        <div class="col-md-4">✅Infertility-related issues</div>
+        <div class="col-md-4">✅Abnormal uterine bleeding</div>
+        <div class="col-md-4">✅Endometriosis</div>
+        <div class="col-md-4">✅Pelvic pain and adhesions</div>
     </div>
     </section>
 
@@ -61,19 +66,21 @@
         <div class="row text-center">
         <div class="col-md-4">
             <h5>Before</h5>
-            <p>Pre-surgery consultation and medical tests</p>
-            <p>Fasting instructions and preparation</p>
+            <p>Consultation with a gynaecologist</p>
+            <p>Ultrasound or diagnostic tests as required</p>
+            <p>Pre-procedure instructions</p>
         </div>
         <div class="col-md-4">
             <h5>During</h5>
-            <p>Small incisions made for camera and instruments</p>
-            <p>Procedure performed under anesthesia</p>
+            <p>Procedure done under anesthesia</p>
+            <p>Tiny camera inserted through natural passages or small incisions</p>
+            <p>Real-time imaging used for diagnosis and treatment</p>
         </div>
         <div class="col-md-4">
             <h5>After</h5>
-            <p>Short hospital observation</p>
-            <p>Light discomfort that eases quickly</p>
-            <p>Return to daily activities in a few days</p>
+            <p>Fast recovery with little discomfort</p>
+            <p>Same-day or short hospital stay</p>
+            <p>Quick return to daily activities</p>
         </div>
         </div>
     </div>
@@ -116,7 +123,7 @@
     <!-- Technology & Equipment with Tabs -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2 class="mb-5" style="text-align: center">MAS Image and video gallery</h2>
+        <h2 class="mb-5" style="text-align: center">Gynae Endoscopy Image and video gallery</h2>
         <!-- Tabs -->
         <ul class="nav nav-tabs" id="mediaTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -163,26 +170,26 @@
         <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="q1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is it safe?</button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is Gynae Endoscopy painful?</button>
             </h2>
             <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Yes, minimal access surgery is safe and widely used around the world with very high success rates.</div>
+            <div class="accordion-body">No. The procedure is performed under anesthesia, and discomfort afterward is minimal.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Will I have scars?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Can it help with infertility?</button>
             </h2>
             <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Only tiny marks that usually fade over time.</div>
+            <div class="accordion-body">Yes. Gynae endoscopy is often used to identify and treat conditions that affect fertility.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">How soon can I resume normal activities?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">Will I need to stay long in the hospital?</button>
             </h2>
             <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Most patients return to work and light activities within a week.</div>
+            <div class="accordion-body">Most patients go home the same day or within 24 hours.</div>
             </div>
         </div>
         </div>

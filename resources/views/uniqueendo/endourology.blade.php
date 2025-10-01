@@ -1,7 +1,7 @@
 @extends('layouts.uniqueendo.app')
 
 @section('title')
-    UniqueEndo | MAS
+    UniqueEndo | MIPS
 @endsection
 
 @section('contents')
@@ -13,8 +13,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                         <h1>Minimal Access Surgery</h1>
-                        <h5 class="text-danger">Advanced care with smaller cuts, faster recovery</h5>
+                         <h1>Endourology Services</h1>
+                        <h5 class="text-danger">Advanced urinary tract treatment with minimal invasion</h5>
                         <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
@@ -24,8 +24,12 @@
 
     <!-- Introduction -->
     <section class="container py-5">
-    <h2>About Minimal Access Surgery</h2>
-    <p>Minimal Access Surgery, also known as laparoscopic or keyhole surgery, is a modern surgical approach that uses tiny incisions instead of large cuts. Through these small openings, surgeons insert a special camera (laparoscope) and fine surgical instruments to perform procedures with precision. This technique reduces trauma to the body, minimizes scarring, and speeds up recovery. It is commonly used for treating conditions such as gallbladder problems, hernias, appendicitis, and certain gynecological or urological issues. Unlike traditional open surgery, patients undergoing minimal access surgery often experience less pain, reduced risk of infection, and a quicker return to normal activities. <br /><br />At UniqueEndo, our specialists are trained in advanced techniques to ensure patient safety and successful outcomes. Whether for diagnostic or therapeutic purposes, minimal access surgery provides a safer, less invasive alternative to conventional surgery.</p>
+    {{-- <h2 class="mb-5" style="text-align: center">About Minimally Invasive Surgery</h2> --}}
+    <p>Endourology is a modern branch of urology that focuses on diagnosing and treating conditions of the urinary tract using minimally invasive techniques. With the help of small cameras, fine instruments, and advanced imaging, doctors can treat problems inside the kidneys, ureters, bladder, and urethra without the need for large incisions.
+
+        <br /><br />This approach is particularly effective for removing kidney stones, treating urinary blockages, or addressing tumors within the urinary tract. By using natural body passages or very small entry points, endourology reduces pain, speeds up recovery, and minimizes complications compared to traditional open surgery.
+
+        At UniqueEndo, our specialists use cutting-edge technology and expertise to provide safe, effective, and patient-centered urological care.</p>
     </section>
 
     <!-- Benefits -->
@@ -33,11 +37,11 @@
     <div class="container">
         <h2 class="mb-4" style="text-align: center">Key Benefits</h2>
         <ul class="list-unstyled">
-        <li><span class="benefit-icon">✅</span>Smaller incisions</li>
-        <li><span class="benefit-icon">✅</span>Less pain and bleeding</li>
-        <li><span class="benefit-icon">✅</span>Shorter hospital stay</li>
-        <li><span class="benefit-icon">✅</span>Faster recovery and return to daily life</li>
-        <li><span class="benefit-icon">✅</span>Minimal scarring</li>
+        <li><span class="benefit-icon">✅</span>Minimally invasive procedures</li>
+        <li><span class="benefit-icon">✅</span>Reduced pain and faster healing</li>
+        <li><span class="benefit-icon">✅</span>Shorter hospital stays</li>
+        <li><span class="benefit-icon">✅</span>High success rate for stone removal and urinary tract treatments</li>
+        <li><span class="benefit-icon">✅</span>Minimal risk of infection</li>
         </ul>
     </div>
     </section>
@@ -46,11 +50,11 @@
     <section class="container py-5">
     <h2 class="mb-5" style="text-align: center">Conditions Treated</h2>
     <div class="row">
-        <div class="col-md-4">✅Gallstones and gallbladder disease</div>
-        <div class="col-md-4">✅Hernias</div>
-        <div class="col-md-4">✅Appendicitis</div>
-        <div class="col-md-4">✅Ovarian cysts and gynecological conditions</div>
-        <div class="col-md-4">✅Certain urological disorders</div>
+        <div class="col-md-4">✅Kidney stones</div>
+        <div class="col-md-4">✅Ureteral and bladder stones</div>
+        <div class="col-md-4">✅Urinary tract blockages</div>
+        <div class="col-md-4">✅Prostate conditions</div>
+        <div class="col-md-4">✅Bladder tumors</div>
     </div>
     </section>
 
@@ -61,19 +65,20 @@
         <div class="row text-center">
         <div class="col-md-4">
             <h5>Before</h5>
-            <p>Pre-surgery consultation and medical tests</p>
-            <p>Fasting instructions and preparation</p>
+            <p>Diagnostic tests such as ultrasound, X-ray, or CT scan</p>
+            <p>Clear instructions on diet and preparation</p>
         </div>
         <div class="col-md-4">
             <h5>During</h5>
-            <p>Small incisions made for camera and instruments</p>
             <p>Procedure performed under anesthesia</p>
+            <p>Small instruments inserted through natural openings or tiny incisions</p>
+            <p>Real-time imaging guides treatment</p>
         </div>
         <div class="col-md-4">
             <h5>After</h5>
-            <p>Short hospital observation</p>
-            <p>Light discomfort that eases quickly</p>
-            <p>Return to daily activities in a few days</p>
+            <p>Quick recovery, often same-day discharge</p>
+            <p>Mild discomfort that fades quickly</p>
+            <p>Return to normal life within a few days</p>
         </div>
         </div>
     </div>
@@ -116,7 +121,7 @@
     <!-- Technology & Equipment with Tabs -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2 class="mb-5" style="text-align: center">MAS Image and video gallery</h2>
+        <h2 class="mb-5" style="text-align: center">Endourology Image and video gallery</h2>
         <!-- Tabs -->
         <ul class="nav nav-tabs" id="mediaTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -163,26 +168,26 @@
         <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="q1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is it safe?</button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is endourology painful?</button>
             </h2>
             <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Yes, minimal access surgery is safe and widely used around the world with very high success rates.</div>
+            <div class="accordion-body">No, the procedure is done under anesthesia. Patients may only feel mild discomfort afterward.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Will I have scars?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Can all kidney stones be treated with endourology?</button>
             </h2>
             <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Only tiny marks that usually fade over time.</div>
+            <div class="accordion-body">Most stones can be managed with endourological techniques, though very large ones may require other approaches.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">How soon can I resume normal activities?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">How long before I can return to work?</button>
             </h2>
             <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Most patients return to work and light activities within a week.</div>
+            <div class="accordion-body">Usually within a few days, depending on the condition treated.</div>
             </div>
         </div>
         </div>

@@ -15,7 +15,7 @@
                     <div class="breadcrumb__text">
                          <h1>Endoscopy Services</h1>
                         <h5 class="text-danger">See inside with precision and care</h5>
-                        <a href="{{ route('uniqueendo.home', ['openModal' => 'appointmentModal']) }}" class="btn btn-primary btn-lg">Book Appointment</a>
+                        <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@
                     <div class="hero__text">
                         <span style="color: blue"><h3> YOUR COMFORT, REGAIN YOUR LIFE. </h3></span>
                         <h2 style="color: red">Take the best Endoscopy Treatment with us</h2>
-                        <a href="{{ route('uniqueendo.contact') }}" class="primary-btn normal-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
+                        <a href="#" class="primary-btn normal-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="{{ route('service.endoscopy') }}">
                         <div class="services__item">
                             <div class="services__item__icon">
                                 <img src="img/icons/en-1.png" widht="80px" height="80px" alt="image"/>
@@ -190,7 +190,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="{{ route('service.mas') }}">
                         <div class="services__item">
                             <div class="services__item__icon">
                                 <img src="img/icons/en-5.png" widht="80px" height="80px" alt="image"/>
@@ -207,7 +207,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="{{ route('service.mips') }}">
                         <div class="services__item">
                             <div class="services__item__icon">
                                 <img src="img/icons/en-5.png" widht="80px" height="80px" alt="image"/>
@@ -224,7 +224,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="{{ route('service.endourology') }}">
                         <div class="services__item">
                             <div class="services__item__icon">
                                 <img src="img/icons/en-3.png" widht="80px" height="80px" alt="image"/>
@@ -241,7 +241,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="{{ route('service.gendoscopy') }}">
                         <div class="services__item">
                             <div class="services__item__icon">
                                 <img src="img/icons/en-4.png" widht="80px" height="80px" alt="image"/>
@@ -258,7 +258,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="{{ route('service.gsurgery') }}">
                         <div class="services__item">
                             <div class="services__item__icon">
                                 <img src="img/icons/en-6.png" widht="80px" height="80px" alt="image"/>
@@ -336,7 +336,7 @@
     <!-- Team Section End -->
 
     <!-- Gallery Begin -->
-    <div class="gallery">
+    {{-- <div class="gallery">
         <div class="gallery__container">
             <div class="grid-sizer"></div>
             <div class="gc__item set-bg" data-setbg="img/gallery/endoscopy.jpg">
@@ -361,60 +361,8 @@
                 <a href="img/gallery/gallery-7.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Gallery End -->
-
-    <!-- Latest News Begin -->
-    {{-- <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-6">
-                    <div class="section-title">
-                        <span>Our News</span>
-                        <h2>Skin care tips</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="latest__btn">
-                        <a href="#" class="primary-btn">View all news</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="latest__item">
-                        <h5><a href="#">Here’s how you can get a natural glow this party season</a></h5>
-                        <p>Lorem ipsum, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <ul>
-                            <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
-                            <li>Dec 06, 2019</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="latest__item">
-                        <h5><a href="#">Get better skin with these top 10 tips for skin care</a></h5>
-                        <p>Lorem ipsum, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <ul>
-                            <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
-                            <li>Dec 06, 2019</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="latest__item">
-                        <h5><a href="#">8 Ways to Save Your Skin if You Exercise Outside This Winter</a></h5>
-                        <p>Lorem ipsum, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <ul>
-                            <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
-                            <li>Dec 06, 2019</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- Latest News End -->
 
     <!-- Appointment Modal -->
 <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">

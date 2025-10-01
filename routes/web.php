@@ -15,7 +15,7 @@ use Inertia\Inertia;
 
 
 Route::get('/', function () {
-    return view('uniqueendo.endoclinic');
+    return view('uniqueendo.home');
 });
 
 Route::get('/home', [UniqueEndoController::class, 'home'])->name('uniqueendo.home');

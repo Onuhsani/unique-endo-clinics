@@ -35,13 +35,14 @@
                             <li class="active"><a href="{{ route('uniqueendo.home') }}">Home</a></li>
                             <li><a href="{{ route('uniqueendo.about') }}">About</a></li>
                             {{-- <li><a href="services.html">Services</a></li> --}}
-                            <li><a href="#">Clinics</a>
+                            <li><a href="{{ route('service.endoscopy') }}">Clinics</a>
                                 <ul class="dropdown">
-                                    <li><a href="pricing.html" style="text-transform: none;">Endoscopy and endotherapy</a></li>
-                                    <li><a href="doctor.html" style="text-transform: none;">Minimal access surgery</a></li>
-                                    <li><a href="blog-details.html" style="text-transform: none;">Edourology</a></li>
-                                    <li><a href="blog-details.html" style="text-transform: none;">Gynae endoscopy</a></li>
-                                    <li><a href="blog-details.html" style="text-transform: none;">General surgery</a></li>
+                                    <li><a href="{{ route('service.endoscopy') }}" style="text-transform: none;">Endoscopy and endotherapy</a></li>
+                                    <li><a href="{{ route('service.mas') }}" style="text-transform: none;">Minimal access surgery</a></li>
+                                    <li><a href="{{ route('service.mips') }}" style="text-transform: none;">Minimally Invasive Paedistric surgery</a></li>
+                                    <li><a href="{{ route('service.endourology') }}" style="text-transform: none;">Edourology</a></li>
+                                    <li><a href="{{ route('service.gendoscopy') }}" style="text-transform: none;">Gynae endoscopy</a></li>
+                                    <li><a href="{{ route('service.gsurgery') }}" style="text-transform: none;">General surgery</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('uniqueendo.gallery') }}">Gallery</a></li>

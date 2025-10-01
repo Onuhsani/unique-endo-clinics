@@ -40,9 +40,79 @@
 
     <!-- Main Section End -->
 
+      <!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form action="{{ route('appointments.add') }}" method="POST">
+                    @csrf
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+
+                    <!-- Appointment Date -->
+                    <div class="mb-3">
+                        <label for="appointment_date" class="form-label">Appointment Date</label>
+                        <input type="date" class="form-control" name="date" required>
+                    </div>
+
+                    <!-- Type of Service -->
+                    <div class="mb-3">
+                        <label for="service_type" class="form-label">Type of Service</label>
+                        <select class="form-select" name="clinic" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="consultation">Endoscopy and endotherapy</option>
+                            <option value="checkup">Minimal access surgery</option>
+                            <option value="treatment">Minimally invasive paediatric surgery</option>
+                            <option value="treatment">Endourology</option>
+                            <option value="treatment">Gynae Endoscopy</option>
+                            <option value="treatment">General Surgery</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
     @include('layouts.uniqueendo.footer')
     @include('layouts.uniqueendo.scripts')
 
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("openModal") === "appointment") {
+      const appointmentModal = new bootstrap.Modal(document.getElementById('appointmentModal'));
+      appointmentModal.show();
+
+      // optional: remove query from URL after opening
+      if (history.replaceState) {
+        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        history.replaceState({}, document.title, cleanUrl);
+      }
+    }
+  });
+</script>
 
     <script>
         @if (Session::has('success'))

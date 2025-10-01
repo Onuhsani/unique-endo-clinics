@@ -1,7 +1,7 @@
 @extends('layouts.uniqueendo.app')
 
 @section('title')
-    UniqueEndo | MAS
+    UniqueEndo | MIPS
 @endsection
 
 @section('contents')
@@ -13,8 +13,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                         <h1>Minimal Access Surgery</h1>
-                        <h5 class="text-danger">Advanced care with smaller cuts, faster recovery</h5>
+                         <h1>Minimally Invasive Paediatric Surgery</h1>
+                        <h5 class="text-danger">Gentle care for little ones with advanced surgical techniques</h5>
                         <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>
                 </div>
@@ -24,8 +24,13 @@
 
     <!-- Introduction -->
     <section class="container py-5">
-    <h2>About Minimal Access Surgery</h2>
-    <p>Minimal Access Surgery, also known as laparoscopic or keyhole surgery, is a modern surgical approach that uses tiny incisions instead of large cuts. Through these small openings, surgeons insert a special camera (laparoscope) and fine surgical instruments to perform procedures with precision. This technique reduces trauma to the body, minimizes scarring, and speeds up recovery. It is commonly used for treating conditions such as gallbladder problems, hernias, appendicitis, and certain gynecological or urological issues. Unlike traditional open surgery, patients undergoing minimal access surgery often experience less pain, reduced risk of infection, and a quicker return to normal activities. <br /><br />At UniqueEndo, our specialists are trained in advanced techniques to ensure patient safety and successful outcomes. Whether for diagnostic or therapeutic purposes, minimal access surgery provides a safer, less invasive alternative to conventional surgery.</p>
+    {{-- <h2 class="mb-5" style="text-align: center">About Minimally Invasive Surgery</h2> --}}
+    <p>Minimally Invasive Paediatric Surgery is a highly specialized surgical approach designed for infants and children. Using tiny instruments and cameras, our surgeons perform procedures through very small incisions, avoiding the need for large cuts. This method is gentle on young patients, reduces pain, and ensures a faster recovery with minimal scarring.
+
+        <br /><br />It is particularly effective for treating conditions such as appendicitis, hernias, undescended testis, and certain chest or abdominal problems in children. By combining advanced technology with child-centered care, we make sure your little one receives safe, effective, and compassionate treatment.
+
+        At UniqueEndo, our paediatric specialists understand the unique needs of children. Every procedure is performed with precision, care, and comfort in mind, so parents can rest assured their child is in safe hands.</p>
+
     </section>
 
     <!-- Benefits -->
@@ -33,10 +38,10 @@
     <div class="container">
         <h2 class="mb-4" style="text-align: center">Key Benefits</h2>
         <ul class="list-unstyled">
-        <li><span class="benefit-icon">✅</span>Smaller incisions</li>
-        <li><span class="benefit-icon">✅</span>Less pain and bleeding</li>
-        <li><span class="benefit-icon">✅</span>Shorter hospital stay</li>
-        <li><span class="benefit-icon">✅</span>Faster recovery and return to daily life</li>
+        <li><span class="benefit-icon">✅</span>Smaller cuts and quicker healing</li>
+        <li><span class="benefit-icon">✅</span>Less pain and discomfort for children</li>
+        <li><span class="benefit-icon">✅</span>Reduced risk of infection</li>
+        <li><span class="benefit-icon">✅</span>Shorter hospital stays</li>
         <li><span class="benefit-icon">✅</span>Minimal scarring</li>
         </ul>
     </div>
@@ -46,11 +51,11 @@
     <section class="container py-5">
     <h2 class="mb-5" style="text-align: center">Conditions Treated</h2>
     <div class="row">
-        <div class="col-md-4">✅Gallstones and gallbladder disease</div>
+        <div class="col-md-4">✅Appendicitis in children</div>
         <div class="col-md-4">✅Hernias</div>
-        <div class="col-md-4">✅Appendicitis</div>
-        <div class="col-md-4">✅Ovarian cysts and gynecological conditions</div>
-        <div class="col-md-4">✅Certain urological disorders</div>
+        <div class="col-md-4">✅Undescended testis</div>
+        <div class="col-md-4">✅Ovarian cysts in young girls</div>
+        <div class="col-md-4">✅Chest and abdominal abnormalities</div>
     </div>
     </section>
 
@@ -61,19 +66,20 @@
         <div class="row text-center">
         <div class="col-md-4">
             <h5>Before</h5>
-            <p>Pre-surgery consultation and medical tests</p>
-            <p>Fasting instructions and preparation</p>
+            <p>Thorough consultation and child-friendly explanations</p>
+            <p>Necessary lab tests and preparation guidelines</p>
         </div>
         <div class="col-md-4">
             <h5>During</h5>
+            <p>Procedure done under safe paediatric anesthesia</p>
             <p>Small incisions made for camera and instruments</p>
-            <p>Procedure performed under anesthesia</p>
+            <p>Real-time monitoring for maximum safety</p>
         </div>
         <div class="col-md-4">
             <h5>After</h5>
-            <p>Short hospital observation</p>
-            <p>Light discomfort that eases quickly</p>
-            <p>Return to daily activities in a few days</p>
+            <p>Quick recovery with short hospital observation</p>
+            <p>Mild discomfort that fades rapidly</p>
+            <p>Children can resume normal activities within a short period</p>
         </div>
         </div>
     </div>
@@ -116,7 +122,7 @@
     <!-- Technology & Equipment with Tabs -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2 class="mb-5" style="text-align: center">MAS Image and video gallery</h2>
+        <h2 class="mb-5" style="text-align: center">MIPS Image and video gallery</h2>
         <!-- Tabs -->
         <ul class="nav nav-tabs" id="mediaTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -163,26 +169,26 @@
         <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="q1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is it safe?</button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Is this safe for children?</button>
             </h2>
             <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Yes, minimal access surgery is safe and widely used around the world with very high success rates.</div>
+            <div class="accordion-body">Yes. Minimally invasive surgery is very safe for children when performed by trained specialists.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Will I have scars?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Will my child feel pain?</button>
             </h2>
             <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Only tiny marks that usually fade over time.</div>
+            <div class="accordion-body">Only minimal discomfort, managed with safe paediatric anesthesia.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="q3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">How soon can I resume normal activities?</button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">How long will my child stay in the hospital?</button>
             </h2>
             <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Most patients return to work and light activities within a week.</div>
+            <div class="accordion-body">Most children can go home within 1–2 days, depending on the condition.</div>
             </div>
         </div>
         </div>
