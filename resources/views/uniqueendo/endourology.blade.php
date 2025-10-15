@@ -1,7 +1,7 @@
 @extends('layouts.uniqueendo.app')
 
 @section('title')
-    UniqueEndo | MIPS
+    UniqueEndo | Endourology
 @endsection
 
 @section('contents')

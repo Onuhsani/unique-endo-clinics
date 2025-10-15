@@ -10,8 +10,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="hero__text">
-                        <span style="color: blue"><h3> YOUR COMFORT, REGAIN YOUR LIFE. </h3></span>
+                    <div class="hero__text" style="text-align: left">
+                        <span style="color: blue"><h3> REGAIN YOUR COMFORT, REGAIN YOUR LIFE. </h3></span>
                         <h2 style="color: red">Take the best Endoscopy Treatment with us</h2>
                         <a href="#" class="primary-btn normal-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
                     </div>

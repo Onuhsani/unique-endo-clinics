@@ -50,6 +50,15 @@
               <span class="pcoded-mtext">Messages</span>
             </a>
           </li>
+
+          <li class=" ">
+            <a href="{{ route('messages.view') }}" class="waves-effect waves-dark">
+              <span class="pcoded-micon">
+                <i class="feather icon-plus"></i>
+              </span>
+              <span class="pcoded-mtext">Add Admin</span>
+            </a>
+          </li>
         </ul>
 
 
