@@ -130,9 +130,10 @@
         <!-- Images -->
         <div class="tab-pane fade show active" id="images" role="tabpanel">
             <div class="row">
-            <div class="col-md-4 mb-3"><img src="{{ asset('img/ma2.jpg') }}" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="{{ asset('img/ma3.jpg') }}" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="{{ asset('img/ma1.jpeg') }}" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/ma2.jpg') }}" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/ma3.jpg') }}" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/ma1.jpeg') }}" class="img-fluid rounded"></div>
+
             </div>
         </div>
         <!-- Videos -->

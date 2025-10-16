@@ -11,11 +11,6 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-    // Register view
-    // public function showRegister()
-    // {
-    //     return view('auth.register');
-    // }
 
     // Register logic
     public function register(Request $request)

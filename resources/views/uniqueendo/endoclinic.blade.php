@@ -118,6 +118,7 @@
                 <div class="col-md-4 mb-3"><img src="{{ asset('img/endo1.jpg') }}" class="img-fluid rounded"></div>
                 <div class="col-md-4 mb-3"><img src="{{ asset('img/endo2.jpg') }}" class="img-fluid rounded"></div>
                 <div class="col-md-4 mb-3"><img src="{{ asset('img/endo4.jpeg') }}" class="img-fluid rounded"></div>
+
             </div>
         </div>
         <!-- Videos -->
