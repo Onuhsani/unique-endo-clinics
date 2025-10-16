@@ -95,8 +95,6 @@
                 <div class="col-lg-5">
                     <ul>
                         <li>All Rights Reserved</li>
-                        <li>Terms & Use</li>
-                        <li>Privacy Policy</li>
                     </ul>
                 </div>
             </div>

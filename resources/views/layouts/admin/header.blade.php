@@ -38,8 +38,8 @@
 
             <div class="dropdown-primary dropdown">
               <div class="dropdown-toggle" data-bs-toggle="dropdown">
-                <img src="{{ asset('assets/images/uniquelogo.jpg') }}" class="img-radius" alt="User-Profile-Image">
-                <span>Onuh Sani</span>
+                {{-- <img src="{{ asset('assets/images/uniquelogo.jpg') }}" class="img-radius" alt="User-Profile-Image"> --}}
+            <span>{{ Auth::user()->name }}</span>
                 <i class="feather icon-chevron-down"></i>
               </div>
               <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
@@ -55,10 +55,12 @@
                   </a>
                 </li>
                 <li>
-                  <a href="auth-sign-in-social.html">
-                    <i class="feather icon-log-out"></i> Logout
-
-                  </a>
+                  <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="btn btn-danger w-100">
+                        <i class="bi bi-box-arrow-right"></i> Logout
+                    </button>
+                </form>
                 </li>
               </ul>
             </div>

@@ -52,7 +52,7 @@
           </li>
 
           <li class=" ">
-            <a href="{{ route('messages.view') }}" class="waves-effect waves-dark">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" class="waves-effect waves-dark">
               <span class="pcoded-micon">
                 <i class="feather icon-plus"></i>
               </span>

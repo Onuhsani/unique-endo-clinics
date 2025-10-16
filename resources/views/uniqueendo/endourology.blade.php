@@ -135,9 +135,9 @@
         <!-- Images -->
         <div class="tab-pane fade show active" id="images" role="tabpanel">
             <div class="row">
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
+            <div class="col-md-4 mb-3"><img src="{{ asset('img/mips3.jpg') }}" class="img-fluid rounded"></div>
+            <div class="col-md-4 mb-3"><img src="{{ asset('img/mips1.jpg') }}" class="img-fluid rounded"></div>
+            <div class="col-md-4 mb-3"><img src="{{ asset('img/mips2.jpg') }}" class="img-fluid rounded"></div>
             </div>
         </div>
         <!-- Videos -->

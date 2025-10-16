@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\uniqueendo;
 
 use App\Http\Controllers\Controller;
+use App\Mail\uniqueendo\AppointmentBookedMail;
 use Illuminate\Http\Request;
 use App\Models\uniqueendo\Appointment;
 use App\Models\uniqueendo\Clinic;
@@ -30,7 +31,7 @@ class AppointmentController extends Controller
 
         try {
             // $clinic = Clinic::where('name', $request->clinic)->first();
-            Appointment::create([
+            $appointment = Appointment::create([
                 'clinic_id' => 1,
                 'name' => $request->name,
                 'email' => $request->email,
@@ -38,6 +39,12 @@ class AppointmentController extends Controller
                 'status' => 'pending',
                 // 'notes' => 'For treatment'
             ]);
+
+
+
+            // Send email notification to admin
+            $adminEmail = 'talk2onuh@gmail.com'; // replace with your admin email
+            Mail::to($adminEmail)->send(new AppointmentBookedMail($appointment));
 
             return redirect()->back()->with('success', 'Appointment scheduled successfully!');
         } catch (\Exception $e) {
@@ -52,32 +59,6 @@ class AppointmentController extends Controller
         return view('admin.appointments', compact('appointments'));
     }
 
-    // Display the form to edit an appointment
-    // public function editAppointment(Appointment $appointment)
-    // {
-    //     $clinics = Clinic::all(); // Fetch all clinics for the dropdown
-    //     return view('appointments.edit', compact('appointment', 'clinics'));
-    // }
-
-    // Update an appointment in the database
-    // public function updateAppointment(Request $request, Appointment $appointment)
-    // {
-    //     $validatedData = $request->validate([
-    //         'clinic_id' => 'required|exists:clinics,id',
-    //         'name' => 'required|string|max:255',
-    //         'email' => 'required|email',
-    //         'appointment_date' => 'required|date|after_or_equal:today',
-    //         'status' => 'required|in:pending,confirmed,cancelled,completed',
-    //     ]);
-
-    //     try {
-    //         $appointment->update($validatedData);
-
-    //         return redirect()->back()->with('success', 'Appointment updated successfully!');
-    //     } catch (\Exception $e) {
-    //         return redirect()->back()->with('error', 'An error occurred: ' . $e->getMessage());
-    //     }
-    // }
 
     // Delete an appointment
     public function deleteAppointment(Appointment $appointment)

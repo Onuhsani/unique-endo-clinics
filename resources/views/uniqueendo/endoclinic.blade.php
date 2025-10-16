@@ -24,14 +24,14 @@
 
     <!-- Introduction -->
     <section class="container py-5">
-    <h2>About Endoscopy</h2>
+    {{-- <h2 class="mb-5" style="text-align: center">About Endoscopy</h2> --}}
     <p>Endoscopy is a modern medical procedure that allows doctors to look inside the body using a thin, flexible tube fitted with a light and camera, called an endoscope. It is often used to diagnose the cause of symptoms such as persistent stomach pain, difficulty swallowing, bleeding, or digestive issues. Unlike traditional surgery, endoscopy is minimally invasive, meaning it does not require large cuts, and in many cases, patients can return home the same day. Through the camera, doctors can see real-time images of internal organs, and in some cases, they can also perform treatments such as removing small growths or taking tissue samples for further tests. <br /> <br />The procedure is considered safe and effective, with very little discomfort to the patient. Depending on the type, the endoscope may be inserted through the mouth, rectum, or a tiny incision, making it adaptable for examining different parts of the body such as the stomach, colon, lungs, or bladder. Patients may experience mild effects like bloating, sore throat, or cramps afterward, but these usually fade quickly. Endoscopy has become an important tool in modern healthcare because it helps doctors detect diseases early, provide accurate diagnoses, and sometimes treat conditions on the spot, all while avoiding the risks and long recovery times associated with major surgery.</p>
     </section>
 
     <!-- Benefits -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2 class="mb-4">Key Benefits</h2>
+        <h2 class="mb-5" style="text-align: center">Key Benefits</h2>
         <ul class="list-unstyled">
         <li><span class="benefit-icon">✅</span>Quick recovery</li>
         <li><span class="benefit-icon">✅</span>Less pain</li>
@@ -43,7 +43,7 @@
 
     <!-- Conditions Treated -->
     <section class="container py-5">
-    <h2>Conditions Treated</h2>
+    <h2 class="mb-5" style="text-align: center">Conditions Treated</h2>
     <div class="row">
         <div class="col-md-4">Stomach ulcers</div>
         <div class="col-md-4">Chronic pain</div>
@@ -54,7 +54,7 @@
     <!-- What to Expect -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2>What to Expect</h2>
+        <h2 class="mb-5" style="text-align: center">What to Expect</h2>
         <div class="row text-center">
         <div class="col-md-4"><h5>Before</h5><p>Preparation steps</p></div>
         <div class="col-md-4"><h5>During</h5><p>Procedure details</p></div>
@@ -65,13 +65,13 @@
 
     <!-- Meet the Specialists -->
     <section class="container py-5">
-    <h2>Meet the Specialists</h2>
+    <h2 class="mb-5" style="text-align: center">Meet the Specialists</h2>
     <div class="row">
         <div class="col-md-4 mb-3">
         <div class="card text-center doctor-card">
             <img src="https://via.placeholder.com/100" class="mx-auto mt-3" alt="Doctor">
             <div class="card-body">
-            <h5 class="card-title">Dr. Jane Doe</h5>
+            <h5 class="card-title">Dr. Bamidele</h5>
             <p class="card-text">10 years experience</p>
             </div>
         </div>
@@ -80,7 +80,16 @@
         <div class="card text-center doctor-card">
             <img src="https://via.placeholder.com/100" class="mx-auto mt-3" alt="Doctor">
             <div class="card-body">
-            <h5 class="card-title">Dr. John Smith</h5>
+            <h5 class="card-title">Dr. Bamidele</h5>
+            <p class="card-text">15 years experience</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4 mb-3">
+        <div class="card text-center doctor-card">
+            <img src="https://via.placeholder.com/100" class="mx-auto mt-3" alt="Doctor">
+            <div class="card-body">
+            <h5 class="card-title">Dr. Bamidele</h5>
             <p class="card-text">15 years experience</p>
             </div>
         </div>
@@ -91,7 +100,7 @@
     <!-- Technology & Equipment with Tabs -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2>Endoscopic image and video gallery</h2>
+        <h2 class="mb-5" style="text-align: center">Endoscopic image and video gallery</h2>
         <!-- Tabs -->
         <ul class="nav nav-tabs" id="mediaTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -105,9 +114,10 @@
         <!-- Images -->
         <div class="tab-pane fade show active" id="images" role="tabpanel">
             <div class="row">
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/endo3.jpg') }}" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/endo1.jpg') }}" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/endo2.jpg') }}" class="img-fluid rounded"></div>
+                <div class="col-md-4 mb-3"><img src="{{ asset('img/endo4.jpeg') }}" class="img-fluid rounded"></div>
             </div>
         </div>
         <!-- Videos -->
@@ -134,7 +144,7 @@
     <!-- FAQs -->
     <section class="bg-light py-5">
     <div class="container">
-        <h2>FAQs</h2>
+        <h2 class="mb-5" style="text-align: center">FAQs</h2>
         <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="q1">

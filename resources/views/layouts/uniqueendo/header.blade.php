@@ -32,10 +32,10 @@
                 <div class="header__menu__option">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="{{ route('uniqueendo.home') }}">Home</a></li>
-                            <li><a href="{{ route('uniqueendo.about') }}">About</a></li>
+                            <li class="{{ Route::is('uniqueendo.home') ? 'active' : '' }}"><a href="{{ route('uniqueendo.home') }}">Home</a></li>
+                            <li class="{{ Route::is('uniqueendo.about') ? 'active' : '' }}"><a href="{{ route('uniqueendo.about') }}">About</a></li>
                             {{-- <li><a href="services.html">Services</a></li> --}}
-                            <li><a href="{{ route('service.endoscopy') }}">Clinics</a>
+                            <li class="{{ Route::is('service.endoscopy') ? 'active' : '' }}"><a href="{{ route('service.endoscopy') }}">Clinics</a>
                                 <ul class="dropdown">
                                     <li><a href="{{ route('service.endoscopy') }}" style="text-transform: none;">Endoscopy and endotherapy</a></li>
                                     <li><a href="{{ route('service.mas') }}" style="text-transform: none;">Minimal access surgery</a></li>
@@ -45,8 +45,8 @@
                                     <li><a href="{{ route('service.gsurgery') }}" style="text-transform: none;">General surgery</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{ route('uniqueendo.gallery') }}">Gallery</a></li>
-                            <li><a href="{{ route('uniqueendo.contact') }}">Contact</a></li>
+                            <li class="{{ Route::is('uniqueendo.gallery') ? 'active' : '' }}"><a href="{{ route('uniqueendo.gallery') }}">Gallery</a></li>
+                            <li class="{{ Route::is('uniqueendo.contact') ? 'active' : '' }}"><a href="{{ route('uniqueendo.contact') }}">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="header__btn">

@@ -24,7 +24,7 @@
 
     <!-- Introduction -->
     <section class="container py-5">
-    <h2>About Minimal Access Surgery</h2>
+    {{-- <h2>About Minimal Access Surgery</h2> --}}
     <p>Minimal Access Surgery, also known as laparoscopic or keyhole surgery, is a modern surgical approach that uses tiny incisions instead of large cuts. Through these small openings, surgeons insert a special camera (laparoscope) and fine surgical instruments to perform procedures with precision. This technique reduces trauma to the body, minimizes scarring, and speeds up recovery. It is commonly used for treating conditions such as gallbladder problems, hernias, appendicitis, and certain gynecological or urological issues. Unlike traditional open surgery, patients undergoing minimal access surgery often experience less pain, reduced risk of infection, and a quicker return to normal activities. <br /><br />At UniqueEndo, our specialists are trained in advanced techniques to ensure patient safety and successful outcomes. Whether for diagnostic or therapeutic purposes, minimal access surgery provides a safer, less invasive alternative to conventional surgery.</p>
     </section>
 
@@ -130,9 +130,9 @@
         <!-- Images -->
         <div class="tab-pane fade show active" id="images" role="tabpanel">
             <div class="row">
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
-            <div class="col-md-4 mb-3"><img src="https://via.placeholder.com/400x250" class="img-fluid rounded"></div>
+            <div class="col-md-4 mb-3"><img src="{{ asset('img/ma2.jpg') }}" class="img-fluid rounded"></div>
+            <div class="col-md-4 mb-3"><img src="{{ asset('img/ma3.jpg') }}" class="img-fluid rounded"></div>
+            <div class="col-md-4 mb-3"><img src="{{ asset('img/ma1.jpeg') }}" class="img-fluid rounded"></div>
             </div>
         </div>
         <!-- Videos -->
