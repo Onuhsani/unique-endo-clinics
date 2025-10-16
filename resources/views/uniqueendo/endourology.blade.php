@@ -145,16 +145,11 @@
             <div class="row">
             <div class="col-md-6 mb-3">
                 <video class="w-100 rounded" controls>
-                <source src="videos/demo.mp4" type="video/mp4">
+                <source src="{{ asset('videos/endourology.mp4') }}" type="video/mp4">
                 Your browser does not support video.
                 </video>
             </div>
-            <div class="col-md-6 mb-3">
-                <video class="w-100 rounded" controls>
-                <source src="videos/demo2.mp4" type="video/mp4">
-                Your browser does not support video.
-                </video>
-            </div>
+
             </div>
         </div>
         </div>
