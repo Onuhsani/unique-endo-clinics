@@ -95,6 +95,11 @@
     </div>
 </div>
 
+<!-- Blinking Image -->
+<img src="{{ asset('img/nhia.png') }}" alt="UniqueEndo Icon" class="blink-image">
+
+
+
     @include('layouts.uniqueendo.footer')
     @include('layouts.uniqueendo.scripts')
 

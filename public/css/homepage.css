@@ -45,3 +45,20 @@ a, a:link, a:visited, a:hover, a:active {
       height: 100px;
       object-fit: cover;
     }
+
+.blink-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 220px; /* adjust as needed */
+    height: auto;
+    z-index: 9999;
+    animation: blink 1.2s infinite;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.2;
+    }
+}
