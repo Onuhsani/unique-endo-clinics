@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Forgot Password - UniqueEndo Admin</title>
     <link href="{{ asset('bower_components/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/png" />
 </head>
 <body class="bg-light">
 <div class="container mt-5">
