@@ -43,7 +43,6 @@
 
             <div class="text-center mt-3">
                 <a href="{{ route('password.request') }}">Forgot Password?</a><br>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Create an Account</a>
             </div>
         </form>
     </div>
