@@ -25,6 +25,7 @@ class AppointmentController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',
+            'phone' => 'required|string|max:20',
             'date' => 'required',
             'clinic' => 'required|string',
         ]);
@@ -35,10 +36,13 @@ class AppointmentController extends Controller
                 'clinic_id' => 1,
                 'name' => $request->name,
                 'email' => $request->email,
+                'phone' => $request->phone,
                 'appointment_date' => $request->date,
                 'status' => 'pending',
                 // 'notes' => 'For treatment'
             ]);
+
+
 
 
 

@@ -65,6 +65,12 @@
                         <input type="email" class="form-control" name="email" required>
                     </div>
 
+                    <!-- Phone Number -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" name="phone" required>
+                    </div>
+
                     <!-- Appointment Date -->
                     <div class="mb-3">
                         <label for="appointment_date" class="form-label">Appointment Date</label>
