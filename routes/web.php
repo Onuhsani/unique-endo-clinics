@@ -43,7 +43,7 @@ Route::prefix('admin')->group(function(){
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
 
-        Route::get('dashboard',[DashboardController::class, 'index'])->name('dashboard.index');
+        Route::get('/',[DashboardController::class, 'index'])->name('dashboard.index');
         Route::get('/clinics', [DoctorsController::class, 'clinics'])->name('clinics.clinics');
         Route::get('/clinics/create-clinic', [DoctorsController::class, 'createClinic'])->name('clinics.create-clinic');
         Route::post('/clinics', [DoctorsController::class, 'addClinic'])->name('clinics.add-clinic');
