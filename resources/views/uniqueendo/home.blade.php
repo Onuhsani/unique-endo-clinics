@@ -6,7 +6,7 @@
 
 @section('contents')
     <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" style="background-color: rgba(255, 255, 255, 0.6); background-blend-mode: lighten;" data-setbg="img/hero-bg.jpg">
+    <section class="hero spad set-bg" style="background-color: rgba(255, 255, 255, 0.6); background-blend-mode: lighten;" data-setbg="{{ asset('img/hero-bg.jpg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -293,7 +293,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="img/logo.jpg" alt="">
+                        <img src="{{ asset('img/logo.jpg') }}" alt="">
                         <h5>Dr. Unique</h5>
                         <span>Surgeon</span>
                         <div class="team__item__social">
@@ -306,7 +306,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="img/logo.jpg" alt="">
+                        <img src="{{ asset('img/logo.jpg') }}" alt="">
                         <h5>Dr. Unique</h5>
                         <span>Surgeon</span>
                         <div class="team__item__social">
@@ -319,7 +319,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="img/logo.jpg" alt="">
+                        <img src="{{ asset('img/logo.jpg') }}" alt="">
                         <h5>Dr. Unique</h5>
                         <span>Surgeon</span>
                         <div class="team__item__social">
