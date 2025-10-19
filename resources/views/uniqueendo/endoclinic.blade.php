@@ -171,6 +171,6 @@
     <section class="text-center py-5" id="book">
     <h2>Ready to Book?</h2>
     <p>Contact us today to schedule your appointment.</p>
-    <a href="tel:+2349019113479" class="btn btn-success btn-lg">📞 Call Now</a>
+    <a href="tel:+2347031323030" class="btn btn-success btn-lg">📞 Call Now</a>
     </section>
 @endsection
