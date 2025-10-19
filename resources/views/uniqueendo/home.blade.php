@@ -26,7 +26,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="consultation__form" id="consultation__form">
+                    <div class="drimg">
+                        <img src="{{ asset('img/drimg.jpg') }}" width="100%" height="auto"/>
+                    </div>
+                    {{-- <div class="consultation__form" id="consultation__form">
                         <div class="section-title">
                             <span>REQUEST FOR YOUR</span>
                             <h2>Consultation</h2>
@@ -42,7 +45,6 @@
                         </div>
                         <form action="{{ route('appointments.add') }}" method="POST" file="True" enctype="multipart/form-data">
                             @csrf
-                            {{-- @method('POST') --}}
                             <input type="text" placeholder="Enter your full name" name="name" id="name" required />
                             <input type="text" placeholder="Enter your email" name="email" id="email" required />
                             <div class="datepicker__item">
@@ -59,7 +61,7 @@
                             </select>
                             <button type="submit" class="site-btn1 btn-primary">Book appoitment</button>
                         </form>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-8">
                     <div class="consultation__text">
