@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-lg-2">
                 <div class="header__logo">
-                    <a href="index-2.html"><img src="img/ue_logo.jpg" alt=""></a>
+                    <a href="{{ route('uniqueendo.home') }}"><img src="img/ue_logo.jpg" alt=""></a>
                     {{-- <a href="index-2.html"><h3>{{ config('app.name') }}</h3></a> --}}
                 </div>
             </div>
