@@ -6,7 +6,7 @@
 
 @section('contents')
     <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" style="background-color: rgba(255, 255, 255, 0.6); background-blend-mode: lighten;" data-setbg="{{ asset('img/hero-bg.jpg') }}">
+    <section class="hero spad set-bg" style="background-color: rgba(255, 255, 255, 0.6); background-blend-mode: lighten;" data-setbg="{{ asset('img/hero-bg.JPG') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

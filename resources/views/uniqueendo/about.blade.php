@@ -111,7 +111,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="{{ asset('img/logo.jpg') }}" alt="">
+                        <img src="{{ asset('img/logo.jpg') }}" alt="Doctor">
                         <h5>Dr. Unique</h5>
                         <span>Surgeon</span>
                         <div class="team__item__social">
@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="{{ asset('img/logo.jpg') }}" alt="">
+                        <img src="{{ asset('img/logo.jpg') }}" alt="Doctor">
                         <h5>Dr. Unique</h5>
                         <span>Surgeon</span>
                         <div class="team__item__social">
@@ -137,7 +137,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="{{ asset('img/logo.jpg') }}" alt="">
+                        <img src="{{ asset('img/logo.jpg') }}" alt="Doctor">
                         <h5>Dr. Unique</h5>
                         <span>Surgeon</span>
                         <div class="team__item__social">
