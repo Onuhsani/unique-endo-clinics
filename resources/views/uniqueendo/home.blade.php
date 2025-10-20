@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="drimg">
-                        <img src="{{ asset('img/drimg.jpg') }}" width="100%" height="auto"/>
+                        <img src="{{ asset('img/drimg.png') }}" width="100%" height="auto"/>
                     </div>
                     {{-- <div class="consultation__form" id="consultation__form">
                         <div class="section-title">
